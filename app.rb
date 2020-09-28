@@ -5,15 +5,15 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/checkout' do
-    session[""] = ""
-    @session = session
-  end
-
-  configure do
-    enable :sessions
-    set :session_secret, "2116multnomah1995"
-  end
+  # post '/checkout' do
+  #   session[""] = ""
+  #   @session = session
+  # end
+  #
+  # configure do
+  #   enable :sessions
+  #   set :session_secret, "2116multnomah1995"
+  # end
 end
 
 # get '/hey' do
