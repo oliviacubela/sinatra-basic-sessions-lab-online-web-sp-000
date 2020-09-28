@@ -6,6 +6,7 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
+    session["item"] = @item
     @session = "session"
   end
   
