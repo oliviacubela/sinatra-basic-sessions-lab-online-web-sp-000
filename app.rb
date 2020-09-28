@@ -8,7 +8,7 @@ class App < Sinatra::Base
   post '/checkout' do
     @session = "session"
   end
-  #
+  
   configure do
     enable :sessions
     set :session_secret, "2116multnomah1995"
