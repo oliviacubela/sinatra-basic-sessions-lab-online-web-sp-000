@@ -7,7 +7,7 @@ class App < Sinatra::Base
 
   post '/checkout' do
     session["item"] = @item
-    @session = "session"
+    @session = session
   end
 
   configure do
