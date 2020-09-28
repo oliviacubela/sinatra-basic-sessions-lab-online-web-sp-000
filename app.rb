@@ -5,7 +5,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/checkout' do 
+  post '/checkout' do 
   end
   configure do
     enable :sessions
