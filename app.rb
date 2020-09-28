@@ -6,6 +6,8 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
+    session[""] = ""
+    @session = session
   end
   
   configure do
@@ -13,3 +15,8 @@ class App < Sinatra::Base
     set :session_secret, "2116multnomah1995"
   end
 end
+
+# get '/hey' do 
+#   session["name"] = "Victoria"
+#   @session = session
+# end
