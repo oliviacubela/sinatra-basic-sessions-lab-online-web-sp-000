@@ -15,5 +15,3 @@ class App < Sinatra::Base
     set :session_secret, "2116multnomah1995"
   end
 end
-
-
